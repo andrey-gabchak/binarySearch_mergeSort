@@ -48,5 +48,12 @@ class BinarySearchTest {
         assertEquals(expectedIndex, result);
     }
 
-
+    @Test
+    void testBinarySearchForNonexistentKey() {
+        int[] inputArray = new int[]{5, 5, 7, 7, 7, 10, 10, 11, 12, 12};
+        int soughtValue = 13;
+        int result = binarySearch.binarySearch(inputArray, soughtValue);
+        int expectedIndex = -1;
+        assertEquals(expectedIndex, result);
+    }
 }
