@@ -44,7 +44,7 @@ class BinarySearchTest {
         int[] inputArray = new int[]{5, 5, 7, 7, 7, 10, 10, 11, 12, 12};
         int soughtValue = 12;
         int actualIndex = binarySearch.binarySearch(inputArray, soughtValue);
-        int expectedIndex = 7;
+        int expectedIndex = 8;
         assertEquals(expectedIndex, actualIndex);
     }
 
