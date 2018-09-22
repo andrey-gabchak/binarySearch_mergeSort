@@ -7,7 +7,16 @@ public class BinarySearch {
         while (leftIndex <= rightIndex) {
             int midIndex = (leftIndex + rightIndex) >>> 1;
             int midValue = array[midIndex];
-            if (key > midValue) {
+
+            if (array[leftIndex] == key) {
+                return leftIndex;
+            } else if (array[midIndex] == key) {
+                if (midIndex == leftIndex + 1) {
+                    return midIndex;
+                } else {
+                    rightIndex = midIndex + 1;
+                }
+            } else if (key > midValue) {
                 leftIndex = midIndex + 1;
             } else if (key < midValue) {
                 rightIndex = midIndex - 1;
