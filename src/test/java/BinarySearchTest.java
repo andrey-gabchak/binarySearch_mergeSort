@@ -22,6 +22,15 @@ class BinarySearchTest {
     }
 
     @Test
+    void testBinarySearchForShiftedIndex() {
+        int[] inputArray = new int[]{5, 6, 1, 3, 4, 5, 5, 5, 5};
+        int soughtValue = 6;
+        int actualIndex = binarySearch.binarySearch(inputArray, soughtValue);
+        int expectedIndex = 1;
+        assertEquals(expectedIndex, actualIndex);
+    }
+
+    @Test
     void testBinarySearchDefault() {
         int[] inputArray = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int soughtValue = 5;
