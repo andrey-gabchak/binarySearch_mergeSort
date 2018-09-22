@@ -1,7 +1,4 @@
 public class BinarySearch {
-    public static void main(String[] args) {
-
-    }
 
     int binarySearch(int[] array, int key) {
         int leftIndex = 0;
