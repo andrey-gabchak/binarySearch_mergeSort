@@ -8,9 +8,6 @@ public class MergeSort {
             return;
         }
 
-        if (leftIndex + 1 < rightIndex) {
-
-        }
         int mid = leftIndex + (rightIndex - leftIndex) / 2;
         mergeSort(inputArray, leftIndex, mid);
         mergeSort(inputArray, mid + 1, rightIndex);
